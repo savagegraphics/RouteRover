@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Libre_Caslon_Display } from "next/font/google";
 import "./globals.css";
+import PrelineScript from "./PrelineScript";
+import { Providers } from "./providers";
 
-const inter = Inter({ subsets: ["latin"] });
+const libreCaslon = Libre_Caslon_Display({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +21,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        {/* Add defer attribute to load Alpine.js asynchronously */}
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@2"></script>
+      </head>
+      <body className={libreCaslon.className}>
+        <Providers>{children}</Providers>
+        <PrelineScript />
+      </body>
     </html>
   );
 }
