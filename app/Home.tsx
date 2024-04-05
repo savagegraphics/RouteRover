@@ -3,6 +3,8 @@ import Hero from "./Home/Hero";
 import First from "./MultiCard/First";
 import WhyUs from "./Home/WhyUs";
 import Customers from "./Home/Customers";
+import Footer from "./Home/Footer";
+import LoService from "./Home/LoService";
 
 type Props = {};
 
@@ -13,6 +15,8 @@ const Home = (props: Props) => {
       <First />
       <WhyUs />
       <Customers />
+      <LoService />
+      <Footer />
     </div>
   );
 };
