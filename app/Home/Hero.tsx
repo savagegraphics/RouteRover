@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import BreadCrumbs from "../Rental/Single/BreadCrumbs";
+import BreadCrumbs from "./BreadCrumbs";
 
 const Home = () => {
   return (
