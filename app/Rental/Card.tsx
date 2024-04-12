@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "@nextui-org/react";
 
 const Card = () => {
   // Array of card details
@@ -272,7 +273,9 @@ const Card = () => {
 
               <div className="flex justify-between mt-2">
                 <p className="w-1/2 text-left font-bold">{card.price}</p>
-                <p className="w-1/2 text-right">right paragraph.</p>
+                <p className="w-1/2 text-right">
+                  <Button className="bg-black text-white">Button</Button>
+                </p>
               </div>
             </div>
           </a>
