@@ -17,7 +17,7 @@ const TheHero = (props: Props) => {
           />
           <div className="absolute inset-0 bg-indigo-500 mix-blend-multiply"></div>
           <div className="relative items-center p-4 sm:max-w-xl">
-            <h1 className="whitespace-nowrap mb-8 text-center text-4xl font-bold text-white md:text-5xl md:mb-12">
+            <h1 className="whitespace-nowrap mb-8 text-center text-2xl font-bold text-white md:text-5xl md:mb-12">
               Rent A Car, Rent Your Freedom
             </h1>
           </div>
