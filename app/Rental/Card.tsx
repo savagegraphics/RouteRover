@@ -1,9 +1,227 @@
 import React from "react";
-import Link from "next/link";
 
-type Props = {};
+const Card = () => {
+  // Array of card details
+  const cardDetails = [
+    {
+      title: "Jeep Renegade",
+      image:
+        "https://media.gettyimages.com/id/512689454/photo/jeep-renegade-crossover-suv.jpg?s=612x612&w=0&k=20&c=qxiykapMZTzcRtkIiZ2VJOGe51ypWJ-adWCwfumRxco=",
+      leftDetails: [
+        { label: "Seats", value: "4" },
+        { label: "Luggage", value: "4" },
+        { label: "Door", value: "4" },
+        { label: "Fuel", value: "Petrol" },
+      ],
+      rightDetails: [
+        { label: "Horsepower", value: "500" },
+        { label: "Engine", value: "3000" },
+        { label: "Drive", value: "4" },
+        { label: "Type", value: "Hatchback" },
+      ],
+      price: "$56",
+    },
+    {
+      title: "Jeep Renegade",
+      image:
+        "https://media.gettyimages.com/id/512689454/photo/jeep-renegade-crossover-suv.jpg?s=612x612&w=0&k=20&c=qxiykapMZTzcRtkIiZ2VJOGe51ypWJ-adWCwfumRxco=",
+      leftDetails: [
+        { label: "Seats", value: "4" },
+        { label: "Luggage", value: "4" },
+        { label: "Door", value: "4" },
+        { label: "Fuel", value: "Petrol" },
+      ],
+      rightDetails: [
+        { label: "Horsepower", value: "500" },
+        { label: "Engine", value: "3000" },
+        { label: "Drive", value: "4" },
+        { label: "Type", value: "Hatchback" },
+      ],
+      price: "$56",
+    },
+    {
+      title: "Jeep Renegade",
+      image:
+        "https://media.gettyimages.com/id/512689454/photo/jeep-renegade-crossover-suv.jpg?s=612x612&w=0&k=20&c=qxiykapMZTzcRtkIiZ2VJOGe51ypWJ-adWCwfumRxco=",
+      leftDetails: [
+        { label: "Seats", value: "4" },
+        { label: "Luggage", value: "4" },
+        { label: "Door", value: "4" },
+        { label: "Fuel", value: "Petrol" },
+      ],
+      rightDetails: [
+        { label: "Horsepower", value: "500" },
+        { label: "Engine", value: "3000" },
+        { label: "Drive", value: "4" },
+        { label: "Type", value: "Hatchback" },
+      ],
+      price: "$56",
+    },
+    {
+      title: "Jeep Renegade",
+      image:
+        "https://media.gettyimages.com/id/512689454/photo/jeep-renegade-crossover-suv.jpg?s=612x612&w=0&k=20&c=qxiykapMZTzcRtkIiZ2VJOGe51ypWJ-adWCwfumRxco=",
+      leftDetails: [
+        { label: "Seats", value: "4" },
+        { label: "Luggage", value: "4" },
+        { label: "Door", value: "4" },
+        { label: "Fuel", value: "Petrol" },
+      ],
+      rightDetails: [
+        { label: "Horsepower", value: "500" },
+        { label: "Engine", value: "3000" },
+        { label: "Drive", value: "4" },
+        { label: "Type", value: "Hatchback" },
+      ],
+      price: "$56",
+    },
+    {
+      title: "Jeep Renegade",
+      image:
+        "https://media.gettyimages.com/id/512689454/photo/jeep-renegade-crossover-suv.jpg?s=612x612&w=0&k=20&c=qxiykapMZTzcRtkIiZ2VJOGe51ypWJ-adWCwfumRxco=",
+      leftDetails: [
+        { label: "Seats", value: "4" },
+        { label: "Luggage", value: "4" },
+        { label: "Door", value: "4" },
+        { label: "Fuel", value: "Petrol" },
+      ],
+      rightDetails: [
+        { label: "Horsepower", value: "500" },
+        { label: "Engine", value: "3000" },
+        { label: "Drive", value: "4" },
+        { label: "Type", value: "Hatchback" },
+      ],
+      price: "$56",
+    },
+    {
+      title: "Jeep Renegade",
+      image:
+        "https://media.gettyimages.com/id/512689454/photo/jeep-renegade-crossover-suv.jpg?s=612x612&w=0&k=20&c=qxiykapMZTzcRtkIiZ2VJOGe51ypWJ-adWCwfumRxco=",
+      leftDetails: [
+        { label: "Seats", value: "4" },
+        { label: "Luggage", value: "4" },
+        { label: "Door", value: "4" },
+        { label: "Fuel", value: "Petrol" },
+      ],
+      rightDetails: [
+        { label: "Horsepower", value: "500" },
+        { label: "Engine", value: "3000" },
+        { label: "Drive", value: "4" },
+        { label: "Type", value: "Hatchback" },
+      ],
+      price: "$56",
+    },
+    {
+      title: "Jeep Renegade",
+      image:
+        "https://media.gettyimages.com/id/512689454/photo/jeep-renegade-crossover-suv.jpg?s=612x612&w=0&k=20&c=qxiykapMZTzcRtkIiZ2VJOGe51ypWJ-adWCwfumRxco=",
+      leftDetails: [
+        { label: "Seats", value: "4" },
+        { label: "Luggage", value: "4" },
+        { label: "Door", value: "4" },
+        { label: "Fuel", value: "Petrol" },
+      ],
+      rightDetails: [
+        { label: "Horsepower", value: "500" },
+        { label: "Engine", value: "3000" },
+        { label: "Drive", value: "4" },
+        { label: "Type", value: "Hatchback" },
+      ],
+      price: "$56",
+    },
+    {
+      title: "Jeep Renegade",
+      image:
+        "https://media.gettyimages.com/id/512689454/photo/jeep-renegade-crossover-suv.jpg?s=612x612&w=0&k=20&c=qxiykapMZTzcRtkIiZ2VJOGe51ypWJ-adWCwfumRxco=",
+      leftDetails: [
+        { label: "Seats", value: "4" },
+        { label: "Luggage", value: "4" },
+        { label: "Door", value: "4" },
+        { label: "Fuel", value: "Petrol" },
+      ],
+      rightDetails: [
+        { label: "Horsepower", value: "500" },
+        { label: "Engine", value: "3000" },
+        { label: "Drive", value: "4" },
+        { label: "Type", value: "Hatchback" },
+      ],
+      price: "$56",
+    },
+    {
+      title: "Jeep Renegade",
+      image:
+        "https://media.gettyimages.com/id/512689454/photo/jeep-renegade-crossover-suv.jpg?s=612x612&w=0&k=20&c=qxiykapMZTzcRtkIiZ2VJOGe51ypWJ-adWCwfumRxco=",
+      leftDetails: [
+        { label: "Seats", value: "4" },
+        { label: "Luggage", value: "4" },
+        { label: "Door", value: "4" },
+        { label: "Fuel", value: "Petrol" },
+      ],
+      rightDetails: [
+        { label: "Horsepower", value: "500" },
+        { label: "Engine", value: "3000" },
+        { label: "Drive", value: "4" },
+        { label: "Type", value: "Hatchback" },
+      ],
+      price: "$56",
+    },
+    {
+      title: "Jeep Renegade",
+      image:
+        "https://media.gettyimages.com/id/512689454/photo/jeep-renegade-crossover-suv.jpg?s=612x612&w=0&k=20&c=qxiykapMZTzcRtkIiZ2VJOGe51ypWJ-adWCwfumRxco=",
+      leftDetails: [
+        { label: "Seats", value: "4" },
+        { label: "Luggage", value: "4" },
+        { label: "Door", value: "4" },
+        { label: "Fuel", value: "Petrol" },
+      ],
+      rightDetails: [
+        { label: "Horsepower", value: "500" },
+        { label: "Engine", value: "3000" },
+        { label: "Drive", value: "4" },
+        { label: "Type", value: "Hatchback" },
+      ],
+      price: "$56",
+    },
+    {
+      title: "Jeep Renegade",
+      image:
+        "https://media.gettyimages.com/id/512689454/photo/jeep-renegade-crossover-suv.jpg?s=612x612&w=0&k=20&c=qxiykapMZTzcRtkIiZ2VJOGe51ypWJ-adWCwfumRxco=",
+      leftDetails: [
+        { label: "Seats", value: "4" },
+        { label: "Luggage", value: "4" },
+        { label: "Door", value: "4" },
+        { label: "Fuel", value: "Petrol" },
+      ],
+      rightDetails: [
+        { label: "Horsepower", value: "500" },
+        { label: "Engine", value: "3000" },
+        { label: "Drive", value: "4" },
+        { label: "Type", value: "Hatchback" },
+      ],
+      price: "$56",
+    },
+    {
+      title: "Jeep Renegade",
+      image:
+        "https://media.gettyimages.com/id/512689454/photo/jeep-renegade-crossover-suv.jpg?s=612x612&w=0&k=20&c=qxiykapMZTzcRtkIiZ2VJOGe51ypWJ-adWCwfumRxco=",
+      leftDetails: [
+        { label: "Seats", value: "4" },
+        { label: "Luggage", value: "4" },
+        { label: "Door", value: "4" },
+        { label: "Fuel", value: "Petrol" },
+      ],
+      rightDetails: [
+        { label: "Horsepower", value: "500" },
+        { label: "Engine", value: "3000" },
+        { label: "Drive", value: "4" },
+        { label: "Type", value: "Hatchback" },
+      ],
+      price: "$56",
+    },
+    // Add more card details as needed
+  ];
 
-const Card = (props: Props) => {
   return (
     <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
@@ -17,168 +235,48 @@ const Card = (props: Props) => {
       </div>
 
       <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <a
-          className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-          href="#"
-        >
-          <div className="aspect-w-16 aspect-h-11">
-            <img
-              className="w-full object-cover rounded-xl"
-              src="https://media.gettyimages.com/id/512689454/photo/jeep-renegade-crossover-suv.jpg?s=612x612&w=0&k=20&c=qxiykapMZTzcRtkIiZ2VJOGe51ypWJ-adWCwfumRxco="
-              alt="Image Description"
-            />
-          </div>
-          <div className="my-6">
-            <h3 className="text-xl font-semibold text-gray-800">
-              Jeep Renegade
-            </h3>
-            <div className="flex justify-between mt-4">
-              <p className="w-1/2  text-left">Seats: 4</p>
-              <p className="w-1/2 text-right">Horsepower: 500</p>
+        {cardDetails.map((card, index) => (
+          <a
+            key={index}
+            className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+            href="#"
+          >
+            <div className="aspect-w-16 aspect-h-11">
+              <img
+                className="w-full object-cover rounded-xl"
+                src={card.image}
+                alt="Image Description"
+              />
             </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left">Luggage: 4</p>
-              <p className="w-1/2 text-right">Engine: 3000</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left">Door: 4</p>
-              <p className="w-1/2 text-right">Drive: 4</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left">Fuel: Petrol</p>
-              <p className="w-1/2 text-right">Type: Hatchback</p>
-            </div>
-            <div className="flex justify-between mt-4">
-              <p className="w-1/2  text-left">Per Hours</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left font-bold">$56</p>
-              <p className="w-1/2 text-right">right paragraph.</p>
-            </div>
-          </div>
-        </a>
+            <div className="my-6">
+              <h3 className="text-xl font-semibold text-gray-800">
+                {card.title}
+              </h3>
+              {card.leftDetails.map((detail, index) => (
+                <div className="flex justify-between" key={index}>
+                  <p className="w-1/2 text-left">
+                    {detail.label}: {detail.value}
+                  </p>
+                  {/* Only display value on the right */}
+                  {index < card.rightDetails.length && (
+                    <p className="w-1/2 text-right">
+                      {card.rightDetails[index].label}:{" "}
+                      {card.rightDetails[index].value}
+                    </p>
+                  )}
+                </div>
+              ))}
+              <div className="flex justify-between mt-4">
+                <p className="w-1/2  text-left">Per Hours</p>
+              </div>
 
-        <a
-          className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-          href="#"
-        >
-          <div className="aspect-w-16 aspect-h-11">
-            <img
-              className="w-full object-cover rounded-xl"
-              src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-              alt="Image Description"
-            />
-          </div>
-          <div className="my-6">
-            <h3 className="text-xl font-semibold text-gray-800">
-              Jeep Renegade
-            </h3>
-            <div className="flex justify-between mt-4">
-              <p className="w-1/2  text-left">Seats: 4</p>
-              <p className="w-1/2 text-right">Horsepower: 500</p>
+              <div className="flex justify-between mt-2">
+                <p className="w-1/2 text-left font-bold">{card.price}</p>
+                <p className="w-1/2 text-right">right paragraph.</p>
+              </div>
             </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left">Luggage: 4</p>
-              <p className="w-1/2 text-right">Engine: 3000</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left">Door: 4</p>
-              <p className="w-1/2 text-right">Drive: 4</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left">Fuel: Petrol</p>
-              <p className="w-1/2 text-right">Type: Hatchback</p>
-            </div>
-            <div className="flex justify-between mt-4">
-              <p className="w-1/2  text-left">Per Hours</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left font-bold">$56</p>
-              <p className="w-1/2 text-right">right paragraph.</p>
-            </div>
-          </div>
-        </a>
-
-        <a
-          className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-          href="#"
-        >
-          <div className="aspect-w-16 aspect-h-11">
-            <img
-              className="w-full object-cover rounded-xl"
-              src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-              alt="Image Description"
-            />
-          </div>
-          <div className="my-6">
-            <h3 className="text-xl font-semibold text-gray-800">
-              Jeep Renegade
-            </h3>
-            <div className="flex justify-between mt-4">
-              <p className="w-1/2  text-left">Seats: 4</p>
-              <p className="w-1/2 text-right">Horsepower: 500</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left">Luggage: 4</p>
-              <p className="w-1/2 text-right">Engine: 3000</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left">Door: 4</p>
-              <p className="w-1/2 text-right">Drive: 4</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left">Fuel: Petrol</p>
-              <p className="w-1/2 text-right">Type: Hatchback</p>
-            </div>
-            <div className="flex justify-between mt-4">
-              <p className="w-1/2  text-left">Per Hours</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left font-bold">$56</p>
-              <p className="w-1/2 text-right">right paragraph.</p>
-            </div>
-          </div>
-        </a>
-        <a
-          className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-          href="#"
-        >
-          <div className="aspect-w-16 aspect-h-11">
-            <img
-              className="w-full object-cover rounded-xl"
-              src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-              alt="Image Description"
-            />
-          </div>
-          <div className="my-6">
-            <h3 className="text-xl font-semibold text-gray-800">
-              Jeep Renegade
-            </h3>
-            <div className="flex justify-between mt-4">
-              <p className="w-1/2  text-left">Seats: 4</p>
-              <p className="w-1/2 text-right">Horsepower: 500</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left">Luggage: 4</p>
-              <p className="w-1/2 text-right">Engine: 3000</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left">Door: 4</p>
-              <p className="w-1/2 text-right">Drive: 4</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left">Fuel: Petrol</p>
-              <p className="w-1/2 text-right">Type: Hatchback</p>
-            </div>
-            <div className="flex justify-between mt-4">
-              <p className="w-1/2  text-left">Per Hours</p>
-            </div>
-            <div className="flex justify-between">
-              <p className="w-1/2  text-left font-bold">$56</p>
-              <p className="w-1/2 text-right">right paragraph.</p>
-            </div>
-          </div>
-        </a>
+          </a>
+        ))}
       </div>
 
       <div className="mt-12 text-center">
@@ -195,9 +293,9 @@ const Card = (props: Props) => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
             <path d="m9 18 6-6-6-6" />
           </svg>

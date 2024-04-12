@@ -5,6 +5,7 @@ import Selectone from "./Single/Selectone";
 import BreadCrumbs from "../Home/BreadCrumbs";
 import TheHero from "./TheHero";
 import Card from "./Card";
+import Footer from "../Home/Footer";
 
 type Props = {};
 
@@ -14,6 +15,7 @@ const Home = (props: Props) => {
       {/* <BreadCrumbs /> */}
       <TheHero />
       <Card />
+      <Footer />
     </div>
   );
 };
