@@ -21,10 +21,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* Add defer attribute to load Alpine.js asynchronously */}
-        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@2"></script>
-      </head>
       <body className={libreCaslon.className}>
         <Providers>{children}</Providers>
         <PrelineScript />
