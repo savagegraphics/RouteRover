@@ -1,9 +1,25 @@
-import React from "react";
+import React from 'react'
+import Card from './ShareBike/UnCard'
+import Hero from './ShareBike/Hero'
+import Onboarding from './ShareBike/Onboarding'
+import SingleCard from './ShareBike/SingleCard'
+import Refer from './ShareBike/Refer'
+import GHCN from './ShareBike/ghcn'
+import Footer from './Home/Footer'
 
-type Props = {};
+type Props = {}
 
 const Shop = (props: Props) => {
-  return <div>Shop</div>;
-};
+  return (
+    <div className='overflow-hidden'>
+      <Hero />
+      <SingleCard />
+      <Onboarding />
+      <Refer />
+      <GHCN />
+      <Footer />
+    </div>
+  )
+}
 
-export default Shop;
+export default Shop
