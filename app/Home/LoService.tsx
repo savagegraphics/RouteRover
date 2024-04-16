@@ -16,7 +16,7 @@ const LoService = (props: Props) => {
           Your Travel Experience
         </p>
 
-        <div className="grid grid-cols-2 gap-8 mt-8 xl:mt-16 md:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-3 xl:grid-cols-4">
           <div className="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-blue-600 rounded-xl">
             <img
               className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
