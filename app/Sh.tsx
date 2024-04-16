@@ -9,7 +9,7 @@ import Footer from './Home/Footer'
 
 type Props = {}
 
-const Shop = (props: Props) => {
+const Share = (props: Props) => {
   return (
     <div className='overflow-hidden'>
       <Hero />
@@ -22,4 +22,4 @@ const Shop = (props: Props) => {
   )
 }
 
-export default Shop
+export default Share

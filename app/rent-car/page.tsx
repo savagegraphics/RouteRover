@@ -1,14 +1,15 @@
 'use client'
 import React, { useState } from 'react'
-import Home from '../Rental/Home'
-import About from '../Rental/About'
-import Contact from '../Rental/Contact'
-import Shop from '../Rental/Shop'
+import Home from '../Rental/CarHome'
+import Bikes from '../Bike'
+import Contact from '../Contact'
+import Share from '../Sh'
 import Link from 'next/link'
+import Cars from '../Cars'
 
 type Props = {}
 
-const NavbarOne = (props: Props) => {
+const Navbar = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false)
   const [currentPage, setCurrentPage] = useState('Home')
 
@@ -80,14 +81,36 @@ const NavbarOne = (props: Props) => {
               </a>
               <a
                 className={`my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 ${
-                  currentPage === 'Shop'
+                  currentPage === 'Cars'
                     ? 'hover:text-blue-500 dark:hover:text-blue-400'
                     : 'hover:text-gray-600 dark:hover:text-gray-300'
                 } md:mx-4 md:my-0`}
                 href='#'
-                onClick={() => navigateTo('Shop')}
+                onClick={() => navigateTo('Cars')}
               >
-                Shop
+                Cars
+              </a>
+              <a
+                className={`my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 ${
+                  currentPage === 'Bikes'
+                    ? 'hover:text-blue-500 dark:hover:text-blue-400'
+                    : 'hover:text-gray-600 dark:hover:text-gray-300'
+                } md:mx-4 md:my-0`}
+                href='#'
+                onClick={() => navigateTo('Bikes')}
+              >
+                Bikes
+              </a>
+              <a
+                className={`my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 ${
+                  currentPage === 'Share'
+                    ? 'hover:text-blue-500 dark:hover:text-blue-400'
+                    : 'hover:text-gray-600 dark:hover:text-gray-300'
+                } md:mx-4 md:my-0`}
+                href='#'
+                onClick={() => navigateTo('Share')}
+              >
+                Share
               </a>
               <a
                 className={`my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 ${
@@ -99,17 +122,6 @@ const NavbarOne = (props: Props) => {
                 onClick={() => navigateTo('Contact')}
               >
                 Contact
-              </a>
-              <a
-                className={`my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 ${
-                  currentPage === 'About'
-                    ? 'hover:text-blue-500 dark:hover:text-blue-400'
-                    : 'hover:text-gray-600 dark:hover:text-gray-300'
-                } md:mx-4 md:my-0`}
-                href='#'
-                onClick={() => navigateTo('About')}
-              >
-                About
               </a>
             </div>
             <div className='flex flex-col mt-6 lg:mt-2 space-y-3 lg:space-y-0 lg:flex-row'>
@@ -131,11 +143,12 @@ const NavbarOne = (props: Props) => {
       </nav>
       {/* Render content based on currentPage state */}
       {currentPage === 'Home' && <Home />}
-      {currentPage === 'About' && <About />}
+      {currentPage === 'Cars' && <Cars />}
+      {currentPage === 'Bikes' && <Bikes />}
       {currentPage === 'Contact' && <Contact />}
-      {currentPage === 'Shop' && <Shop />}
+      {currentPage === 'Share' && <Share />}
     </div>
   )
 }
 
-export default NavbarOne
+export default Navbar

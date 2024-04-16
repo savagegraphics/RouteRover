@@ -1,9 +1,9 @@
-"use client";
-import React from "react";
-import Navbar from "./Navbar";
-import NavbarOne from "./NavbarOne";
+'use client'
+import React from 'react'
+import Navbar from './Nav'
+import NavbarOne from './Navbar'
 
-type Props = {};
+type Props = {}
 
 const page = (props: Props) => {
   return (
@@ -11,7 +11,7 @@ const page = (props: Props) => {
       <NavbarOne />
       {/* <Navbar /> */}
     </div>
-  );
-};
+  )
+}
 
-export default page;
+export default page
