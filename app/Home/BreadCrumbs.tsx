@@ -1,8 +1,6 @@
 import React from "react";
-import Select from "../Rental/Single/Select";
-import Selectone from "../Rental/Single/Selectone";
-import Search from "../Rental/Single/Search";
-import Exoticar from "@/public/exoticar.jpg";
+import Select from "./Select";
+import Selectone from "./Selectone";
 
 type Props = {};
 
@@ -24,7 +22,7 @@ const BreadCrumbs = (props: Props) => {
           </div>
           <div className="inline-block p-8 text-center items-center">
             <p className="font-bold tracking-wide text-gray-800">
-              <Selectone />
+              <Select />
             </p>
           </div>
         </div>
