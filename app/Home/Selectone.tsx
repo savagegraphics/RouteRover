@@ -11,7 +11,7 @@ export default function App() {
         start: parseDate("2024-04-01"),
         end: parseDate("2024-04-08"),
       }}
-      className="max-w-sm"
+      className="max-w-sm lg:max-w-lg"
     />
   );
 }
