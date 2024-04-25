@@ -1,9 +1,14 @@
 import React from "react";
+import Contacty from "./Rental/Contact";
 
 type Props = {};
 
 const Contact = (props: Props) => {
-  return <div>Contact</div>;
+  return (
+    <div>
+      <Contacty />
+    </div>
+  );
 };
 
 export default Contact;

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import BikeHome from "./Rental/BikeHome";
 
-type Props = {}
+type Props = {};
 
 const Bike = (props: Props) => {
-  return <div>Bike</div>
-}
+  return (
+    <div>
+      <BikeHome />
+    </div>
+  );
+};
 
-export default Bike
+export default Bike;

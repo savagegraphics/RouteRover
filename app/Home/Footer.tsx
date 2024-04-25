@@ -5,7 +5,7 @@ type Props = {};
 const Footer = (props: Props) => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div className="bg-black px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-full md:px-24 lg:px-8">
       <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
         <div className="md:max-w-md lg:col-span-2">
           <a
@@ -14,16 +14,16 @@ const Footer = (props: Props) => {
             title="Company"
             className="inline-flex items-center"
           >
-            <h1 className="flex-none italic text-xl font-semibold">
+            <h1 className="flex-none italic text-xl text-white font-semibold">
               RouteRover
             </h1>
           </a>
           <div className="mt-4 lg:max-w-sm">
-            <p className="text-sm text-gray-800">
+            <p className="text-sm text-white">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam.
             </p>
-            <p className="mt-4 text-sm text-gray-800">
+            <p className="mt-4 text-sm text-white">
               Eaque ipsa quae ab illo inventore veritatis et quasi architecto
               beatae vitae dicta sunt explicabo.
             </p>
@@ -31,14 +31,12 @@ const Footer = (props: Props) => {
         </div>
         <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
           <div>
-            <p className="font-semibold tracking-wide text-gray-800">
-              Category
-            </p>
+            <p className="font-semibold tracking-wide text-white">Category</p>
             <ul className="mt-2 space-y-2">
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   News
                 </a>
@@ -46,7 +44,7 @@ const Footer = (props: Props) => {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   World
                 </a>
@@ -54,7 +52,7 @@ const Footer = (props: Props) => {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Games
                 </a>
@@ -62,7 +60,7 @@ const Footer = (props: Props) => {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   References
                 </a>
@@ -70,14 +68,12 @@ const Footer = (props: Props) => {
             </ul>
           </div>
           <div>
-            <p className="font-semibold tracking-wide text-gray-800">
-              Business
-            </p>
+            <p className="font-semibold tracking-wide text-white">Business</p>
             <ul className="mt-2 space-y-2">
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Web
                 </a>
@@ -85,7 +81,7 @@ const Footer = (props: Props) => {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   eCommerce
                 </a>
@@ -93,7 +89,7 @@ const Footer = (props: Props) => {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Business
                 </a>
@@ -101,7 +97,7 @@ const Footer = (props: Props) => {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Entertainment
                 </a>
@@ -109,7 +105,7 @@ const Footer = (props: Props) => {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Portfolio
                 </a>
@@ -117,12 +113,12 @@ const Footer = (props: Props) => {
             </ul>
           </div>
           <div>
-            <p className="font-semibold tracking-wide text-gray-800">Apples</p>
+            <p className="font-semibold tracking-wide text-white">Apples</p>
             <ul className="mt-2 space-y-2">
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Media
                 </a>
@@ -130,7 +126,7 @@ const Footer = (props: Props) => {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Brochure
                 </a>
@@ -138,7 +134,7 @@ const Footer = (props: Props) => {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Nonprofit
                 </a>
@@ -146,7 +142,7 @@ const Footer = (props: Props) => {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Educational
                 </a>
@@ -154,7 +150,7 @@ const Footer = (props: Props) => {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Projects
                 </a>
@@ -162,12 +158,12 @@ const Footer = (props: Props) => {
             </ul>
           </div>
           <div>
-            <p className="font-semibold tracking-wide text-gray-800">Cherry</p>
+            <p className="font-semibold tracking-wide text-white">Cherry</p>
             <ul className="mt-2 space-y-2">
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Infopreneur
                 </a>
@@ -175,7 +171,7 @@ const Footer = (props: Props) => {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Personal
                 </a>
@@ -183,7 +179,7 @@ const Footer = (props: Props) => {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Wiki
                 </a>
@@ -191,7 +187,7 @@ const Footer = (props: Props) => {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-200 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Forum
                 </a>
@@ -201,7 +197,7 @@ const Footer = (props: Props) => {
         </div>
       </div>
       <div className="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row">
-        <p className="text-sm text-gray-600">
+        <p className="text-sm text-gray-200">
           © Copyright {currentYear} PROJECT SURVIVOR. All rights reserved.
         </p>
         <div className="flex items-center mt-4 space-x-4 sm:mt-0">

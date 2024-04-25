@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@nextui-org/react": "^2.2.10",
+    "@nextui-org/date-picker": "^2.0.6",
+    "@nextui-org/react": "^2.3.5",
     "alpinejs": "^3.13.8",
     "axios": "^1.6.8",
     "framer-motion": "^11.0.24",
